@@ -1,3 +1,46 @@
  
 @import '~@nativescript/theme/css/core.css';
-@import '~@nativescript/theme/css/blue.css';
+@import '~@nativescript/theme/css/sky.css';
+
+.mdi {
+    font-family: "Material Icons", "MaterialIcons-Regular";
+  }
+
+  .h1{
+      color: black !important;
+  }
+
+.page{
+    background-color: rgba(4, 4, 10, .85);
+}
+
+.bg-dark{    
+    background-color: rgba(4, 4, 10, .5);
+}
+
+.title{
+    background-color: rgba(4, 4, 10, .95);
+    width: 100%;
+    color: white;
+    padding: 40px;
+    text-shadow: 2px 2px 3px black;
+}
+
+.nt-input Label{
+    font-size: 18;
+    margin-bottom: 12;
+}
+
+.nt-input Textfield{
+    font-size: 12;
+}
+
+.container{    
+    background-image: url("~/assets/images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 10;
+    margin-left: 10;
+    padding: 10;
+}

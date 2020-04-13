@@ -1,0 +1,18 @@
+<FlexboxLayout class="page">
+    <ScrollView class="container" width="96%" orientation="vertical" alignSelf="center" height="100%"> 
+        <StackLayout class="bg-dark" width="100%">
+            <StackLayout>
+                <Label text="Your Calculated BMI" class="h1 text-center title"></Label>
+            </StackLayout>
+            <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="600">
+                <StackLayout class="p-20">
+                    <StackLayout>
+                        <Label text="{{results}}" class="p font-weight-bold text-center"></Label>
+                        <Image src="~/assets/images/bmi-chart.png"></Image>      
+                        <Image src="~/assets/images/bmi-wheel.jpg"></Image>                 
+                    </StackLayout>
+                </StackLayout>
+              </CardView>
+            </StackLayout>
+    </ScrollView>
+</FlexboxLayout>

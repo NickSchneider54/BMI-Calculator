@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<FlexboxLayout class="page">
+    <ScrollView class="container" width="96%" orientation="vertical" alignSelf="center" height="100%"> 
+        <StackLayout class="bg-dark" width="100%">
+            <StackLayout>
+                <Label text="Calculate Your BMI" class="h1 text-center title"></Label>
+            </StackLayout>
+            <CardView class="cardStyle" margin="5" elevation="20" radius="1" height="210">
+                <StackLayout class="nt-form" class="p-20">
+                    <StackLayout class="nt-input">
+                        <Label text="Height:" class="h1 text-center"></Label>
+                        <Label text="{{height}}in" class="h1 text-center"></Label>
+                        <Slider class="" [(ngModel)]="height" minValue="1" maxValue="100" value="50"></Slider>                        
+                    </StackLayout>
+                </StackLayout>
+              </CardView>
+              
+              <CardView class="cardStyle" margin="10" elevation="20" radius="1" height="230">
+                <StackLayout class="nt-input">
+                    <Label text="Weight:" class="h1 text-center"></Label>
+                    <Label text="{{weight}}lbs" class="h1 text-center"></Label>                      
+                    <GridLayout columns="*,*" rows="*,*">
+                        <Button class="btn -sky -rounded-lg btnWeight mdi" text="remove" col="0" row="0" elevation="50" (tap)="decWeight()"></Button>
+                        <Button class="btn -sky -rounded-lg btnWeight mdi" text="add" col="1" row="0" elevation="50" (tap)="incWeight()"></Button>
+                      </GridLayout>
+                  </StackLayout>
+            </CardView>
+            <Button text="Calculate BMI" class="btn -sky -rounded-sm calcBtn" elevation="50" (tap)="calculateBMI()"></Button>
+          </StackLayout>
+    </ScrollView>
+</FlexboxLayout>
